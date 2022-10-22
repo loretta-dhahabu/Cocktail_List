@@ -4,7 +4,7 @@ class CreateCocktails < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :image
       t.string :category
-      t.string :type
+      t.string :drink_type
       t.string :glass
       t.string :ingredients
       t.string :instructions

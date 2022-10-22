@@ -15,7 +15,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_22_153027) do
     t.string "name"
     t.string "image"
     t.string "category"
-    t.string "type"
+    t.string "drink_type"
     t.string "glass"
     t.string "ingredients"
     t.string "instructions"
@@ -33,7 +33,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_22_153027) do
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.text "body"
+    t.text "content"
     t.string "customer_id"
     t.string "cocktail_id"
     t.datetime "created_at", null: false
