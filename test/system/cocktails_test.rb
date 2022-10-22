@@ -14,6 +14,14 @@ class CocktailsTest < ApplicationSystemTestCase
     visit cocktails_url
     click_on "New cocktail"
 
+    fill_in "Category", with: @cocktail.category
+    fill_in "Date modified", with: @cocktail.date_modified
+    fill_in "Glass", with: @cocktail.glass
+    fill_in "Image", with: @cocktail.image
+    fill_in "Ingredients", with: @cocktail.ingredients
+    fill_in "Instructions", with: @cocktail.instructions
+    fill_in "Name", with: @cocktail.name
+    fill_in "Type", with: @cocktail.type
     click_on "Create Cocktail"
 
     assert_text "Cocktail was successfully created"
@@ -24,6 +32,14 @@ class CocktailsTest < ApplicationSystemTestCase
     visit cocktail_url(@cocktail)
     click_on "Edit this cocktail", match: :first
 
+    fill_in "Category", with: @cocktail.category
+    fill_in "Date modified", with: @cocktail.date_modified
+    fill_in "Glass", with: @cocktail.glass
+    fill_in "Image", with: @cocktail.image
+    fill_in "Ingredients", with: @cocktail.ingredients
+    fill_in "Instructions", with: @cocktail.instructions
+    fill_in "Name", with: @cocktail.name
+    fill_in "Type", with: @cocktail.type
     click_on "Update Cocktail"
 
     assert_text "Cocktail was successfully updated"

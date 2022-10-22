@@ -12,6 +12,46 @@
   <% end %>
 
   <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :image, style: "display: block" %>
+    <%= form.text_field :image %>
+  </div>
+
+  <div>
+    <%= form.label :category, style: "display: block" %>
+    <%= form.text_field :category %>
+  </div>
+
+  <div>
+    <%= form.label :type, style: "display: block" %>
+    <%= form.text_field :type %>
+  </div>
+
+  <div>
+    <%= form.label :glass, style: "display: block" %>
+    <%= form.text_field :glass %>
+  </div>
+
+  <div>
+    <%= form.label :ingredients, style: "display: block" %>
+    <%= form.text_field :ingredients %>
+  </div>
+
+  <div>
+    <%= form.label :instructions, style: "display: block" %>
+    <%= form.text_field :instructions %>
+  </div>
+
+  <div>
+    <%= form.label :date_modified, style: "display: block" %>
+    <%= form.date_field :date_modified %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
